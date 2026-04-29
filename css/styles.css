@@ -34,6 +34,10 @@ h2 {
     color: grey;
 }
 
+h3 {
+    padding-top: 50px;
+}
+
 .social {
     text-decoration-line: underline;
     font-style: italic;
