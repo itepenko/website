@@ -61,7 +61,7 @@ h3 {
     justify-content: center;
 }
 
-.topics {
+.areas {
     padding-top: 30px;
     padding-left: 30px;
 }
@@ -70,4 +70,19 @@ li {
     font-style: italic;
     font-size: 17px;
     color: grey;
+}
+
+.gallery {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;   
+}
+
+.frame {
+    padding: 25px;
+}
+
+.art {
+    cursor:pointer;
 }
