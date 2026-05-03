@@ -76,7 +76,8 @@ li {
     padding-top: 50px;
     display: flex;
     justify-content: center;
-    text-align: center;   
+    text-align: center;
+    flex-direction: row;   
 }
 
 .frame {
