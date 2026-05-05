@@ -268,3 +268,26 @@ a:hover {
     gap: 10px;
     margin-top: 12px;
 }
+
+.tooltip {
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+  }
+  
+.tooltip.show {
+    opacity: 1;
+}
+
+.record-btn {
+    position: relative;
+}

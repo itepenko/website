@@ -315,5 +315,18 @@
     playbackTimers = [];
     clearPlayingIndicator();
   });
+
+  const btn = document.getElementById('share-copy');
+  const tooltip = document.getElementById('copy-tooltip');
+
+  btn.addEventListener('click', async () => {
+  
+    tooltip.classList.add('show');
+
+    setTimeout(() => {
+      tooltip.classList.remove('show');
+    }, 1500);
+  });
+  
 })();
 
