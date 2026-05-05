@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Silophone</title>
+</head>
+<body>
+    <div class="center">
+        <img class="silophone" src="img/Silophone.JPEG" alt="colors"
+        onclick="this.style.transform === 'scale(2)' 
+                ? this.style.transform = 'scale(1)' 
+                : this.style.transform = 'scale(2)'">
+        <!-- <h1>Silophone</h1> -->
+        <div class="buttons">
+            <div class="button" style="background-color: rgba(0, 148, 248, 1);">G</div>
+            <div class="button" style="background-color: rgba(243, 241, 244, 1);">A</div>
+            <div class="button" style="background-color: rgba(118, 0, 106, 1);">B</div>
+            <div class="button" style="background-color: rgba(201, 0, 0, 1);">C</div>
+            <div class="button" style="background-color: rgba(254, 35, 0, 1);">D</div>
+            <div class="button" style="background-color: rgba(255, 190, 0, 1);">E</div>
+            <div class="button" style="background-color: rgba(0, 159, 0, 1);">F</div>
+            <div class="button" style="background-color: rgba(0, 148, 248, 1);">G</div>
+            <div class="button" style="background-color: rgba(243, 241, 244, 1);">A</div>
+            <div class="button" style="background-color: rgba(118, 0, 106, 1);">B</div>
+            <div class="button" style="background-color: rgba(201, 0, 0, 1);">C</div>
+            <div class="button" style="background-color: rgba(254, 35, 0, 1);">D</div>
+            <div class="button" style="background-color: rgba(255, 190, 0, 1);">E</div>
+            <div class="button" style="background-color: rgba(0, 159, 0, 1);">F</div>
+            <div class="button" style="background-color: rgba(0, 148, 248, 1);">G</div>
+        </div>
+        <div class="record">
+        </div>
+        <div class="record-controls">
+            <button class="record-btn" id="record-play" type="button">Play</button>
+            <!-- <button class="record-btn" id="record-share" type="button">share</button> -->
+            <button class="record-btn" id="record-clear" type="button">Clear</button>
+            <button class="record-btn" id="share-copy" type="button">Copy colors</button>
+        </div>
+    </div>
+
+    <div class="share-overlay" id="share-overlay" hidden>
+        <div class="share-card" role="dialog" aria-modal="true" aria-label="Share melody">
+            <div class="share-title" id="share-card-title"></div>
+            <div class="share-emoji" id="share-card-emoji"></div>
+            <div class="share-actions">
+                <button class="record-btn" id="share-native" type="button" hidden>send</button>
+                <button class="record-btn" id="share-copy" type="button">copy</button>
+                <button class="record-btn" id="share-close" type="button">close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/colors.js"></script>
+</body>
+</html>
